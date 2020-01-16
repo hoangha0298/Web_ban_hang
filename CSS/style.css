@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Arimo:400,700");
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+.clear-fix::after{
+    clear: both;
+    display: block;
+}
+body{
+    background: white;
+    font-family: 'Arimo', Arial, sans-serif;
+    font-size: 16px;
+    color:black;
+}
+/* Header*/
+header{
+    background-image: radial-gradient(circle, #f94e30, #f85236, #f7573b, #f55b41, #f45f46);
+    padding-top: 0.3%;
+}
+/* Header_top*/
+.header-top{
+    color: white;
+}
+.header-top-left{
+    float: left;
+}
+.header-top-right{
+    width: 30%;
+    float: right;
+}
+.header-top-right span{
+    padding-left: 2%;
+    margin-right: 2%;
+}
+.header-top-right-signin{
+    border-left:white solid 1px;
+}
+/*Header-botton*/
+/*Header-botton-logo*/
+.header-botton-logo{
+    font-size: 20px;
+}
+/*Header-botton-menu*/
+li{
+    list-style: none;
+    display: inline-block;
+}
+a{
+    color: white;
+}
+li a:hover{
+    color: white;
+    text-decoration: none;
+}
+li ul li{
+    display: block;
+}
+li ul li a:hover{
+    color: white;
+    text-decoration: none;
+}
+.header-botton-menu{
+    padding-top: 1.1%;
+    padding-bottom: 1.1%;
+    position: relative;
+    text-align: center;
+}
+.header-botton-menu-category{
+    margin-left: 5%;
+}
+.show{
+    display: inline-block!important;
+
+}
+.show a{
+    color: white!important;
+    text-decoration: none!important;
+}
+.show ul li a{
+    color: black!important;
+    text-decoration: none!important;
+}
+/*Header_icon*/
+.header-icon{
+    color: white;
+}
