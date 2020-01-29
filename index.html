@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Shop!!!!</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
@@ -14,58 +14,88 @@
 <body>
     <!--Header-start-->
     <header class="fixed-top">
-        <!--header-top-->
+        <!--Header-top-->
         <div class="container">
-            <div class="clear-fix">
-                <div class="header-top">
-                    <div class="header-top-left">
-                        Kết nối
-                        <i class="fab fa-facebook header-icon"></i>
-                        <i class="fab fa-twitter-square header-icon"></i>
-                    </div>
-                    <div class="header-top-right">
-                        <span><i class="fas fa-bell header-icon"></i> Thông báo</span>
-                        <span>Đăng ký</span>
-                        <span class="header-top-right-signin">Đăng nhập</span>
-                    </div>
-                </div>
+            <div class="d-flex justify-content-end">
+                <ul class="header-top-right">
+                    <li class="header-top-right-notification">
+                        <a href="">
+                            <i class="far fa-bell"></i> Thông báo
+                        </a>
+                        <div class="header-top-right-show-notification">
+                            <div class="header-top-right-show-notification-detail">
+                                <img src="img/notification.png" alt="" width="100px" height="100px">
+                                <p>Đăng nhập để xem thông báo</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">Đăng ký</a>
+                    </li>
+                    <li>
+                        <a class="header-top-right-signin" href="">Đăng nhập</a>
+                    </li>
+                </ul>
             </div>
 
-        </div>
-        <!--header-botton-->
-        <div class="container">
-            <div class="row">
-                <!--Logo-->
-                <div class="col-md-2 header-botton-logo">
-                    <img src="img/logo.png" alt="aroma" width="50px" height="50px">
-                    <span style="color: green;">H&T</span>
-                    <span style="color: yellow;">Shop</span>
-                </div>
-                <!--Menu-->
-                <div class="col-md-3 header-botton-menu">
-                    <li>
-                        <a class="nav-item" href="#">HOME</a>
-                    </li>
-                    <li class="nav-item submenu dropdown header-botton-menu-category">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
-                            aria-haspopup="true" aria-expanded="false">SẢN PHẨM</a>
-                        <ul class="dropdown-menu ">
-                            <li class="nav-item"><a class="nav-link" href="">Smart Phones</a></li>
-                            <li class="nav-item"><a class="nav-link" href="">Headphones</a></li>
-                            <li class="nav-item"><a class="nav-link" href="">Speaker</a></li>
-                        </ul>
-                    </li>
-                </div>
-                <!--Search-->
-                <div class="col-md-3">
-                    <form action="" class="form-search set-search">
-                        <input type="text" class="input-search" placeholder="Search Game">
-                        <i class="fas fa-search" aria-hidden="true"></i>
+        <!--Header-botton-->
+        <div class="row">
+            <!--Header-botton-logo-->
+            <div class="col-md-3 header-botton-logo">
+                <img src="img/logo.png" alt="" width="60px" height="60px">
+                <span style="color: green;">H&T</span>
+                <Span style="color: yellow;">Shop</Span>
+            </div>
+
+            <!--Header-botton-menu-->
+            <div class="col-md-2 header-botton-menu">
+                <li><a href="">HOME</a></li>
+                <li class="nav-item submenu dropdown ">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SẢN PHẨM</a>
+                    <!--Header-botton-menu-mega-->
+                    <ul class="dropdown-menu header-botton-menu-category">
+                        <li class="nav-item "><a class="nav-link" href="">Smart Phones </a>
+                            <ul>
+                                <li class="nav-item "><a class="nav-link" href="">Xiaomi</a></li>
+                                <li class="nav-item "><a class="nav-link" href="">Samsung</a></li>
+                                <li class="nav-item "><a class="nav-link" href="">Iphone</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item "><a class="nav-link" href="">Headphones</a>
+                            <ul>
+                                <li class="nav-item "><a class="nav-link" href="">Sony</a></li>
+                                <li class="nav-item "><a class="nav-link" href="">Xiaomi</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item "><a class="nav-link" href="">Speaker</a>
+                            <ul>
+                                <li class="nav-item "><a class="nav-link" href="">Sony</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+
+            <!--Header-botton-search-->
+            <div class="col-md-5 header-botton-search">
+                <div class="header-botton-search-main">
+                    <form action="" class="form-search">
+                        <input type="text" class="input-search" placeholder="Search ....">
                     </form>
                 </div>
-                <!--Cart-->
-                <div class="col-md-2">
-
+                <button>
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                </button>
+            </div>
+            <!--Header-booton-shopping-cart-->
+            <div class="col-md-1 header-botton-shopping-cart">
+                <a href="">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <!--Header-booton-shopping-cart-show-->
+                <div class="header-botton-shopping-cart-show">
+                    <img src="img/shopping_card.png" alt="" width="100px" height="100px">
+                    <p>Đăng nhập để xem thông báo</p>
                 </div>
             </div>
         </div>
@@ -75,9 +105,14 @@
 
     </footer>
     <!-- JS -->
+    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
