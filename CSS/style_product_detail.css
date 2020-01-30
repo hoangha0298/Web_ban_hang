@@ -1,0 +1,39 @@
+.header-top-right-account{
+    position: relative;
+}
+.header-top-right-account-funtion{
+    position: absolute;
+    right: 25%;
+    bottom: -500%;
+    visibility: hidden;
+    transition: 100ms;
+    z-index: 5;
+}
+.header-top-right-account-funtion-detail{
+    width: 150px;
+    background-color: white;
+    border: rgba(110, 107, 107,0.5) solid 0.4px;
+    border-radius: 2px;
+}
+.header-top-right-account-funtion-detail li{
+    display: block;
+    padding-left: 20%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.header-top-right-account-funtion-detail li a{
+    color: black;
+    font-size: 16px;
+    font-weight: 550;
+}
+.header-top-right-account:hover .header-top-right-account-funtion{
+    display: block;
+    visibility: visible;
+}
+.header-top-right-account-funtion-detail li:hover{
+    background: rgba(189, 195, 199,0.3);
+    width: 100%;
+}
+.header-top-right-account-funtion-detail li a:hover{
+    color: black;
+}

@@ -205,8 +205,8 @@ header{
     background: white;
     border: rgba(0,0,0,0.3) solid 1px;
     position: absolute;
-    right: 0;
-    bottom: -320%;
+    right: 45%;
+    bottom: -340%;
     color: #000;
     font-size: 13px;
     text-align: center;
